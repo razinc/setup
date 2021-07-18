@@ -16,3 +16,6 @@ sudo nvautoinstall --rpmadd
 # install steam
 sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install steam
+
+# install pavucontrol
+sudo dnf install pavucontrol
