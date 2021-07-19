@@ -19,3 +19,6 @@ sudo dnf install steam
 
 # install pavucontrol
 sudo dnf install pavucontrol
+
+# install neovim
+sudo dnf install -y neovim python3-neovim
