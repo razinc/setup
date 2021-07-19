@@ -27,6 +27,6 @@ sudo dnf install -y neovim python3-neovim
 sudo dnf install alacritty
 
 # install zsh
-sudo dnf zsh
+sudo dnf install zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
