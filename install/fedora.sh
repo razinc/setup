@@ -28,4 +28,5 @@ sudo dnf install alacritty
 
 # install zsh
 sudo dnf zsh
+chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
