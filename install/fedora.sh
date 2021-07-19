@@ -22,3 +22,6 @@ sudo dnf install pavucontrol
 
 # install neovim
 sudo dnf install -y neovim python3-neovim
+
+# install alacritty
+sudo dnf install alacritty
