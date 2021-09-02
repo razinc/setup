@@ -1,0 +1,27 @@
+" file location:
+"   vim     -> ~/.virc
+"   nvim    -> ~/.config/nvim/init.vim
+
+set nocompatible
+set number
+" colo desert
+" set hlsearch
+syn on
+set nocp
+set formatoptions-=tc
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+nmap <silent> ./ :nohlsearch<CR>
+set autoindent
+set tabstop=4
+set expandtab
+set ruler
+set tabpagemax=100
+set showmatch
+ca fp echo expand('%:p')
+
