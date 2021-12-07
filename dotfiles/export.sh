@@ -27,6 +27,16 @@ ln -svf $src/profile ~/.profile
 echo "exporting alsa"
 sudo ln -svf $src/alsa /etc/modprobe.d/alsa-base.conf
 
+# polybar
+echo "exporting polybar"
+mkdir -p ~/.config/polybar
+ln -svf $src/polybar_config ~/.config/polybar/config
+ln -svf $src/polybar_launch_script ~/.config/polybar/launch.sh
+
 # rofi
-# zshrc
 # oh-my-zsh
+
+# zshrc
+echo "exporting zsh"
+ln -svf $src/zsh ~/.zshrc
+
