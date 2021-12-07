@@ -1,4 +1,4 @@
-sudo dnf install feh gnome-tweaks neofetch i3status dmenu pavucontrol neovim python3-neovim alacritty util-linux-user deluge -y
+sudo dnf install feh rofi gnome-tweaks neofetch i3status pavucontrol neovim python3-neovim alacritty util-linux-user deluge maim polybar -y
 
 sudo dnf remove gnome-contacts gnome-weather gnome-clocks gnome-maps totem gnome-calculator simple-scan rhythmbox cheese gnome-tour yelp rxvt -y
 
@@ -30,7 +30,7 @@ flatpak install flathub org.libretro.RetroArch
 # sudo flatpak install flathub com.jetbrains.PyCharm-Community
 # TODO: add retroarch, steam
 
-cd ~
-dconf load / < saved_settings.dconf
-cd -
+# cd ~
+# dconf load / < saved_settings.dconf
+# cd -
 
