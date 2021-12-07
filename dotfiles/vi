@@ -1,7 +1,3 @@
-" file location:
-"   vim     -> ~/.virc
-"   nvim    -> ~/.config/nvim/init.vim
-
 set nocompatible
 set number
 " colo desert
