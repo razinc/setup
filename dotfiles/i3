@@ -183,17 +183,20 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 
+# display setting
 exec --no-startup-id xrandr --output HDMI-1 --mode 2560x1440
 exec --no-startup-id xrandr --output eDP-1 --off
 
+# gap size
 gaps outer 5
 gaps inner 10
 
 for_window [class=".*"] border pixel 0
 
-# exec --no-startup-id feh --bg-max ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png
-exec --no-startup-id feh --bg-center ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png
-# exec --no-startup-id feh --no-fehbg --bg-center "/home/__razn__/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
+# wallpaper
+# exec --no-startup-id "feh --bg-max ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
+exec --no-startup-id "feh --bg-center ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
+# exec --no-startup-id "feh --no-fehbg --bg-center ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
 
 # inherit gnome tweaks settings
 # exec_always --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
@@ -203,3 +206,8 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # take screenshot
 bindsym $mod+Print exec --no-startup-id "gnome-screenshot" 
+
+# startup
+exec_always --no-startup-id "steam -silent"
+exec_always --no-startup-id deluge
+

@@ -23,12 +23,8 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.videolan.VLC
 flatpak install flathub io.atom.Atom
-flatpak install flathub com.valvesoftware.Steam
 flatpak install flathub org.libretro.RetroArch
-# sudo flatpak install flathub com.jetbrains.PyCharm-Community
-# TODO: add retroarch, steam
 
 # cd ~
 # dconf load / < saved_settings.dconf
