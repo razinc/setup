@@ -195,7 +195,7 @@ for_window [class=".*"] border pixel 0
 
 # wallpaper
 # exec --no-startup-id "feh --bg-max ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
-exec --no-startup-id "feh --bg-center ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
+exec_always --no-startup-id "feh --bg-center ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
 # exec --no-startup-id "feh --no-fehbg --bg-center ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
 
 # inherit gnome tweaks settings
@@ -208,6 +208,8 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 bindsym $mod+Print exec --no-startup-id "gnome-screenshot" 
 
 # startup
-exec_always --no-startup-id "steam -silent"
-exec_always --no-startup-id deluge
+exec --no-startup-id "steam -silent"
+exec --no-startup-id deluge
+
+bindsym $mod+Shift+s exec --no-startup-id "shutdown now"
 
