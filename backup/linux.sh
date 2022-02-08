@@ -9,6 +9,3 @@ cp -r ~/Pictures .
 
 cp -r ~/Downloads .
 
-# cd ~
-# dconf dump / > saved_settings.dconf
-# cd -
