@@ -99,7 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias atom="flatpak run io.atom.Atom" 
+alias fpu="sudo dnf upgrade" 
+alias fpar="sudo dnf autoremove"
 
 # force QT apps to run in dark mode
 export QT_STYLE_OVERRIDE=Adwaita-dark

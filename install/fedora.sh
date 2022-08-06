@@ -1,32 +1,80 @@
-sudo dnf install feh rofi gnome-tweaks neofetch i3status pavucontrol neovim python3-neovim alacritty util-linux-user deluge maim polybar -y
+#!/usr/bin/bash
 
-sudo dnf remove gnome-contacts gnome-weather gnome-clocks gnome-maps totem gnome-calculator simple-scan rhythmbox cheese gnome-tour yelp rxvt -y
+sudo dnf upgrade
 
-sudo dnf copr enable fuhrmann/i3-gaps -y
-sudo dnf install i3-gaps -y
+############
+# installs #
+############
 
-# # disable secure boot
-# sudo dnf install dnf-plugins-core -y
-# sudo dnf copr enable t0xic0der/nvidia-auto-installer-for-fedora -y
-# sudo dnf install nvautoinstall -y
-# sudo nvautoinstall --rpmadd
+# standard package
+sudo dnf install \
+        neovim python3-neovim \
+        alacritty \
+        pavucontrol \
+        gnome-tweaks \
+        neofetch \
+        xrandr \
+        deluge \
+        vlc \
+        discord \
+        -y | tee install.log
 
-# sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
-# sudo dnf install steam -y
+# i3-gaps
+sudo dnf copr enable fuhrmann/i3-gaps -y | tee -a install.log
+sudo dnf install \
+        i3-gaps \
+        polybar \
+        rofi \
+        feh \
+        -y | tee -a install.log
 
-# sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
-# sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
-# sudo dnf install vlc -y
-    
-sudo dnf install zsh -y
-chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# font
+# https://docs.fedoraproject.org/en-US/quick-docs/fonts/
 
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub io.atom.Atom
-flatpak install flathub org.libretro.RetroArch
+# brave
+sudo dnf install dnf-plugins-core
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo dnf install brave-browser -y
 
-# cd ~
-# dconf load / < saved_settings.dconf
-# cd -
+# steam
+sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam  | tee -a install.log
+sudo dnf install steam -y  | tee -a install.log
 
+# # nvidia driver (disable secure boot)
+# sudo dnf config-manager --set-enabled rpmfusion-nonfree-nvidia-driver  | tee -a install.log
+# sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y  | tee -a install.log
+# # check if nvidia driver is installed
+# #nvidia-smi
+
+# zshell
+sudo dnf install zsh -y  | tee -a install.log
+chsh -s $(which zsh)  | tee -a install.log
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" | tee -a install.log
+
+#####################
+# remove bloatwares #
+#####################
+
+sudo dnf remove \
+        gnome-contacts \
+        gnome-weather \
+        gnome-clocks \
+        gnome-maps \
+        totem \
+        gnome-calculator \
+        simple-scan \
+        rhythmbox \
+        cheese \
+        gnome-tour \
+        yelp \
+        rxvt \
+        -y  | tee -a install.log
+
+
+################
+# post process #
+################
+echo -e "\nInstallation error:"
+grep -i --color "No match for argument" install.log
+grep -i --color "no such file or directory" install.log
