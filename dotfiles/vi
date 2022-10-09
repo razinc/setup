@@ -30,3 +30,4 @@ inoremap { {}<left>
 inoremap {;<CR> {<CR>};<ESC>O
 inoremap {<CR> {<CR>}<ESC>O
 
+autocmd BufNewFile,BufRead .virc set filetype=vim
