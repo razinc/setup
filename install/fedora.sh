@@ -17,6 +17,7 @@ sudo dnf install \
         deluge \
         vlc \
         discord \
+        compton \
         -y | tee install.log
 
 # i3-gaps

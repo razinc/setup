@@ -40,3 +40,6 @@ ln -svf $src/polybar_launch_script ~/.config/polybar/launch.sh
 echo "exporting zsh"
 ln -svf $src/zsh ~/.zshrc
 
+# compton
+echo "exporting compton"
+ln -svf $src/compton ~/.config/compton/compton.conf

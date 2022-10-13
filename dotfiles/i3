@@ -213,5 +213,8 @@ exec --no-startup-id "steam -silent"
 # exec --no-startup-id deluge
 # exec --no-startup-id "flatpak run com.discordapp.Discord --start-minimized"
 
+# compton
+exec_always compton --config ~/.config/compton/compton.conf
+
 bindsym $mod+Shift+s exec --no-startup-id "shutdown now"
 
