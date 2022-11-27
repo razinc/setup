@@ -18,16 +18,20 @@ sudo dnf install \
         vlc \
         discord \
         compton \
-        -y | tee install.log
-
-# i3-gaps
-sudo dnf copr enable fuhrmann/i3-gaps -y | tee -a install.log
-sudo dnf install \
-        i3-gaps \
+        i3 \
         polybar \
         rofi \
         feh \
-        -y | tee -a install.log
+        -y | tee install.log
+
+# # i3-gaps
+# sudo dnf copr enable fuhrmann/i3-gaps -y | tee -a install.log
+# sudo dnf install \
+#         i3-gaps \
+#         polybar \
+#         rofi \
+#         feh \
+#         -y | tee -a install.log
 
 # font
 wget -P /tmp https://github.com/FortAwesome/Font-Awesome/releases/download/6.2.0/fontawesome-free-6.2.0-desktop.zip
