@@ -186,6 +186,7 @@ bindsym $mod+r mode "resize"
 # display setting
 exec --no-startup-id xrandr --output HDMI-1 --mode 2560x1440
 exec --no-startup-id xrandr --output eDP-1 --off
+bindsym $mod+m exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080
 
 # gap size
 gaps outer 5
