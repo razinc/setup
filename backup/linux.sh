@@ -3,6 +3,7 @@
 mkdir -p Steam
 cp -r ~/.local/share/Steam/grids Steam/
 cp -r ~/.local/share/Steam/skins Steam/
+cp -r ~/.local/share/Steam/steamapps/compatdata Steam/savefiles
 cp -r ~/.config/autostart/steam.desktop Steam/
 
 cp -r ~/Projects .
