@@ -1,11 +1,15 @@
 #!/usr/bin/bash
 
-sudo dnf upgrade
+sudo dnf upgrade -y
+
+##########################
+# enable additional repo #
+##########################
+sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam  | tee -a install.log
 
 ############
 # installs #
 ############
-
 # standard package
 sudo dnf install \
         neovim python3-neovim \
@@ -22,27 +26,21 @@ sudo dnf install \
         polybar \
         rofi \
         feh \
+        steam \
+        zsh \
         -y | tee install.log
-
 # font
 wget -P /tmp https://github.com/FortAwesome/Font-Awesome/releases/download/6.2.0/fontawesome-free-6.2.0-desktop.zip
 unzip /tmp/fontawesome-free-6.2.0-desktop.zip -d /tmp
 sudo cp -r  /tmp/fontawesome-free-6.2.0-desktop/otfs /usr/local/share/fonts/FontAwesome6
 fc-cache -f -v
-
-# steam
-sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam  | tee -a install.log
-sudo dnf install steam -y  | tee -a install.log
-
-# zshell
-sudo dnf install zsh -y  | tee -a install.log
+# shell setup
 chsh -s $(which zsh)  | tee -a install.log
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" | tee -a install.log
 
 #####################
 # remove bloatwares #
 #####################
-
 sudo dnf remove \
         gnome-contacts \
         gnome-weather \
