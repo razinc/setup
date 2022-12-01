@@ -6,6 +6,7 @@ sudo dnf upgrade -y
 # enable additional repo #
 ##########################
 sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam  | tee -a install.log
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
 ############
 # installs #
@@ -20,7 +21,6 @@ sudo dnf install \
         xrandr \
         deluge \
         vlc \
-        discord \
         compton \
         i3 \
         polybar \
@@ -32,6 +32,7 @@ sudo dnf install \
 # font
 wget -P /tmp https://github.com/FortAwesome/Font-Awesome/releases/download/6.2.0/fontawesome-free-6.2.0-desktop.zip
 unzip /tmp/fontawesome-free-6.2.0-desktop.zip -d /tmp
+sudo mkdir -p /usr/local/share/fonts
 sudo cp -r  /tmp/fontawesome-free-6.2.0-desktop/otfs /usr/local/share/fonts/FontAwesome6
 fc-cache -f -v
 # shell setup
