@@ -42,4 +42,5 @@ ln -svf $src/zsh ~/.zshrc
 
 # compton
 echo "exporting compton"
+mkdir -p ~/.config/compton
 ln -svf $src/compton ~/.config/compton/compton.conf
