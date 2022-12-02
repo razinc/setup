@@ -38,7 +38,7 @@ sudo cp -r  /tmp/fontawesome-free-6.2.0-desktop/otfs /usr/local/share/fonts/Font
 fc-cache -f -v
 # shell setup
 chsh -s $(which zsh)  | tee -a install.log
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" | tee -a install.log
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #####################
 # remove bloatwares #
