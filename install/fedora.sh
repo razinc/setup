@@ -13,6 +13,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 ############
 # standard package
 sudo dnf install \
+        util-linux-user \
         neovim python3-neovim \
         alacritty \
         pavucontrol \
