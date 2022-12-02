@@ -5,7 +5,7 @@ sudo dnf upgrade -y
 ##########################
 # enable additional repo #
 ##########################
-sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam  | tee -a install.log
+sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
 ############
@@ -56,8 +56,7 @@ sudo dnf remove \
         gnome-tour \
         yelp \
         rxvt \
-        -y  | tee -a install.log
-
+        -y
 
 ################
 # post process #
