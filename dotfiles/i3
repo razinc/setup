@@ -195,9 +195,7 @@ gaps inner 10
 for_window [class=".*"] border pixel 0
 
 # wallpaper
-# exec --no-startup-id "feh --bg-max ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
 exec_always --no-startup-id "feh --bg-center ~/.config/i3/wallpaper.png; source ~/.fehbg"
-# exec --no-startup-id "feh --no-fehbg --bg-center ~/Pictures/Eva_WP2.png.18587537df63d920e6d85c2e4c1ed15e.png"
 
 # inherit gnome tweaks settings
 # exec_always --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
@@ -212,10 +210,8 @@ bindsym $mod+Shift+Print exec --no-startup-id "gnome-screenshot -i"
 # startup
 exec --no-startup-id "steam -silent"
 # exec --no-startup-id deluge
-# exec --no-startup-id "flatpak run com.discordapp.Discord --start-minimized"
 
 # compton
 exec_always --no-startup-id compton --config ~/.config/compton/compton.conf
 
 bindsym $mod+Shift+s exec --no-startup-id "shutdown now"
-
