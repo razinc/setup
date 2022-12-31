@@ -14,6 +14,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 # standard package
 sudo dnf install \
         util-linux-user \
+        python3-pip \
         htop \
         neovim python3-neovim \
         alacritty \
