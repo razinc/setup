@@ -42,6 +42,20 @@ fc-cache -f -v
 chsh -s $(which zsh)  | tee -a install.log
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+##############
+# steam skin #
+##############
+# guide: https://steamcommunity.com/sharedfiles/filedetails/?id=1941650801
+# main skin
+wget -P /tmp https://github.com/minischetti/metro-for-steam/archive/refs/tags/v4.4.zip
+unzip /tmp/v4.4.zip -d /tmp
+cp -r /tmp/metro-for-steam-4.4 ~/.local/share/Steam/skins
+# patch
+git clone https://github.com/redsigma/UPMetroSkin.git /tmp/UPMetroSkin
+cp -r /tmp/UPMetroSkin/Unofficial\ 4.x\ Patch/Main\ Files\ \[Install\ First\]/* ~/.local/share/Steam/skins/metro-for-steam-4.4
+git clone https://github.com/The-HopelessGamer/Friends-UI-Custom.git /tmp/Friends-UI-Custom
+cat ~/.local/share/Steam/skins/metro-for-steam-4.4/resource/webkit.css /tmp/Friends-UI-Custom/friends.custom.dev.css > ~/.local/share/Steam/skins/metro-for-steam-4.4/resource/webkit.css
+
 #####################
 # remove bloatwares #
 #####################
