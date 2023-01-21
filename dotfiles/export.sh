@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 # set source
 src=`pwd`
 echo "Source directory: $src\n"
