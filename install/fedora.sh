@@ -31,6 +31,7 @@ sudo dnf install \
         feh \
         steam \
         zsh \
+        meld \
         -y | tee install.log
 # font
 wget -P /tmp https://github.com/FortAwesome/Font-Awesome/releases/download/6.2.0/fontawesome-free-6.2.0-desktop.zip
