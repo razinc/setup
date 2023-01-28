@@ -42,6 +42,8 @@ fc-cache -f -v
 # shell setup
 chsh -s $(which zsh)  | tee -a install.log
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# poetry
+curl -sSL https://install.python-poetry.org | python3 -
 
 ##############
 # steam skin #
