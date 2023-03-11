@@ -102,8 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias fpu="sudo dnf upgrade" 
-alias fpar="sudo dnf autoremove"
+alias fu="sudo dnf upgrade" 
+alias fa="sudo dnf autoremove"
 
 # force QT apps to run in dark mode
 export QT_STYLE_OVERRIDE=Adwaita-dark
