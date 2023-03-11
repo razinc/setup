@@ -39,9 +39,6 @@ unzip /tmp/fontawesome-free-6.2.0-desktop.zip -d /tmp
 sudo mkdir -p /usr/local/share/fonts
 sudo cp -r  /tmp/fontawesome-free-6.2.0-desktop/otfs /usr/local/share/fonts/FontAwesome6
 fc-cache -f -v
-# shell setup
-chsh -s $(which zsh)  | tee -a install.log
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # poetry
 curl -sSL https://install.python-poetry.org | python3 -
 
@@ -76,6 +73,12 @@ sudo dnf remove \
         yelp \
         rxvt \
         -y
+
+###############
+# shell setup #
+# #############
+chsh -s $(which zsh)  | tee -a install.log
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ################
 # post process #
