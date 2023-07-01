@@ -32,7 +32,7 @@ sudo dnf install \
         steam \
         zsh \
         meld \
-        -y | tee install.log
+        -y
 # enable media playback in firefox
 sudo dnf install ffmpeg-libs --allowerasing
 # font
@@ -84,10 +84,3 @@ sudo dnf remove \
 # #############
 chsh -s $(which zsh)  | tee -a install.log
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-################
-# post process #
-################
-echo -e "\nInstallation error:"
-grep -i --color "No match for argument" install.log
-grep -i --color "no such file or directory" install.log
