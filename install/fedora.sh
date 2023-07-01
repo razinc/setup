@@ -74,6 +74,9 @@ sudo dnf remove \
         gnome-tour \
         yelp \
         rxvt \
+        mediawriter \
+        rxvt-unicode \
+        i3lock \
         -y
 
 ###############
