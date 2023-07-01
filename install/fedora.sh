@@ -33,6 +33,8 @@ sudo dnf install \
         zsh \
         meld \
         -y | tee install.log
+# enable media playback in firefox
+sudo dnf install ffmpeg-libs --allowerasing
 # font
 wget -P /tmp https://github.com/FortAwesome/Font-Awesome/releases/download/6.2.0/fontawesome-free-6.2.0-desktop.zip
 unzip /tmp/fontawesome-free-6.2.0-desktop.zip -d /tmp
