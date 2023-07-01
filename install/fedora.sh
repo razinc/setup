@@ -24,7 +24,7 @@ sudo dnf install \
         xrandr \
         deluge \
         vlc \
-        compton \
+        picom \
         i3 \
         polybar \
         rofi \
