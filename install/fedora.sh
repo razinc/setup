@@ -37,7 +37,7 @@ sudo dnf install \
 sudo dnf install ffmpeg-libs --allowerasing
 # font
 wget -P /tmp https://github.com/FortAwesome/Font-Awesome/releases/download/6.2.0/fontawesome-free-6.2.0-desktop.zip
-unzip /tmp/fontawesome-free-6.2.0-desktop.zip -d /tmp
+unzip -o /tmp/fontawesome-free-6.2.0-desktop.zip -d /tmp
 sudo mkdir -p /usr/local/share/fonts
 sudo cp -r  /tmp/fontawesome-free-6.2.0-desktop/otfs /usr/local/share/fonts/FontAwesome6
 fc-cache -f -v
