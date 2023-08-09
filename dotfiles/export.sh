@@ -6,20 +6,18 @@ echo "Source directory: $src\n"
 
 # i3
 echo "exporting i3"
-mkdir -p ~/.config/i3
-ln -svf $src/i3 ~/.config/i3/config
+rm -rf ~/.config/i3
+ln -svf $src/.config/i3  ~/.config/i3
 
 # vim
 echo "\nexporting vi"
-ln -svf $src/vi ~/.virc
-mkdir -p ~/.config/nvim
-ln -svf $src/vi ~/.config/nvim/init.vim
+rm -rf ~/.config/nvim
+ln -svf $src/.config/nvim ~/.config/nvim
 
 # gtk
 echo "\nexporting gtk"
-ln -svf $src/gtk-3.0 ~/.gtkrc-2.0
-mkdir -p ~/.config/gtk-3.0
-ln -svf $src/gtk-3.0 ~/.config/gtk-3.0/settings.ini 
+rm -rf ~/.config/gtk-3.0
+ln -svf $src/.config/gtk-3.0 ~/.config/gtk-3.0
 
 # profile
 echo "\nexporting profile"
@@ -31,9 +29,8 @@ sudo ln -svf $src/alsa /etc/modprobe.d/alsa-base.conf
 
 # polybar
 echo "\nexporting polybar"
-mkdir -p ~/.config/polybar
-ln -svf $src/polybar_config ~/.config/polybar/config
-ln -svf $src/polybar_launch_script ~/.config/polybar/launch.sh
+rm -rf ~/.config/polybar
+ln -svf $src/.config/polybar ~/.config/polybar
 
 # rofi
 # oh-my-zsh
@@ -44,5 +41,5 @@ ln -svf $src/zsh ~/.zshrc
 
 # compton
 echo "\nexporting compton"
-mkdir -p ~/.config/compton
-ln -svf $src/compton ~/.config/compton/compton.conf
+rm -rf ~/.config/compton
+ln -svf $src/.config/compton ~/.config/compton

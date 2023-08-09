@@ -1,4 +1,0 @@
-# options snd-hda-intel model=,dell-headset-multi
-# options snd-hda-intel model=headset-mic
-options snd-hda-intel model=alc233-eapd
-# options snd-hda-intel model=alc255-acer,dell-headset-multi
