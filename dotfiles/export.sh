@@ -21,7 +21,7 @@ ln -svf $src/.config/gtk-3.0 ~/.config/gtk-3.0
 
 # profile
 echo "\nexporting profile"
-ln -svf $src/profile ~/.profile
+ln -svf $src/.profile ~/.profile
 
 # sound
 echo "\nexporting alsa"
@@ -37,7 +37,7 @@ ln -svf $src/.config/polybar ~/.config/polybar
 
 # zshrc
 echo "\nexporting zsh"
-ln -svf $src/zsh ~/.zshrc
+ln -svf $src/.zshrc ~/.zshrc
 
 # compton
 echo "\nexporting compton"
