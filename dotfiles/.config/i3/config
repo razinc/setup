@@ -199,7 +199,7 @@ gaps inner 10
 for_window [class=".*"] border pixel 0
 
 # wallpaper
-exec_always --no-startup-id "feh --bg-center ~/.config/i3/wallpaper.png; source ~/.fehbg"
+exec_always --no-startup-id "feh --bg-center ~/Pictures/wallpaper.png; source ~/.fehbg"
 
 # inherit gnome tweaks settings
 # exec_always --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
