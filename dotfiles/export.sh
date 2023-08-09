@@ -23,10 +23,6 @@ ln -svf $src/.config/gtk-3.0 ~/.config/gtk-3.0
 echo "\nexporting profile"
 ln -svf $src/.profile ~/.profile
 
-# sound
-echo "\nexporting alsa"
-sudo ln -svf $src/alsa /etc/modprobe.d/alsa-base.conf
-
 # polybar
 echo "\nexporting polybar"
 rm -rf ~/.config/polybar
