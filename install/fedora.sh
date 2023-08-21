@@ -2,12 +2,6 @@
 
 sudo dnf upgrade -y
 
-##########################
-# enable additional repo #
-##########################
-sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-
 ############
 # installs #
 ############
@@ -23,16 +17,19 @@ sudo dnf install \
         neofetch \
         xrandr \
         deluge \
-        vlc \
         picom \
         i3 \
         polybar \
         rofi \
         feh \
-        steam \
         zsh \
         meld \
         -y
+# additional repo required
+sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam
+sudo dnf install steam
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install vlc
 # enable media playback in firefox
 sudo dnf install ffmpeg-libs --allowerasing
 # font
