@@ -144,7 +144,7 @@ format-full-underline = ${colors.okay}
 [module/temperature]
 type = internal/temperature
 thermal-zone = 1
-warn-temperature = 60
+warn-temperature = 80
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 label = %temperature-c%
