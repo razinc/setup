@@ -14,8 +14,8 @@ syn on
 " TODO: group leader key mapping, nmap mapping & alias
 " leader key mapping
 let mapleader = " "
-map <leader>n : tabn<CR>
-map <leader>p : tabp<CR>
+map <leader>l : tabn<CR>
+map <leader>h : tabp<CR>
 " nmap
 nmap <silent> ./ :nohlsearch<CR>
 " alias
