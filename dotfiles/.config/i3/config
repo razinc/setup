@@ -193,8 +193,8 @@ exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080
 exec --no-startup-id xrandr --output LVDS --off
 
 # gap size
-gaps outer 5
-gaps inner 10
+gaps outer 3
+gaps inner 3
 
 for_window [class=".*"] border pixel 0
 
