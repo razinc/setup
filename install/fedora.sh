@@ -65,5 +65,5 @@ sudo dnf remove \
 ###############
 # shell setup #
 # #############
-chsh -s $(which zsh)  | tee -a install.log
+chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
