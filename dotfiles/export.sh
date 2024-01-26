@@ -2,29 +2,29 @@
 
 # set source
 src=`pwd`
-echo "Source directory: $src\n"
+printf "Source directory: $src\n\n"
 
 # i3
-echo "exporting i3"
+printf "exporting i3"
 rm -rf ~/.config/i3
 ln -svf $src/.config/i3  ~/.config/i3
 
 # vim
-echo "\nexporting vi"
+printf "exporting vi"
 rm -rf ~/.config/nvim
 ln -svf $src/.config/nvim ~/.config/nvim
 
 # gtk
-echo "\nexporting gtk"
+printf "exporting gtk"
 rm -rf ~/.config/gtk-3.0
 ln -svf $src/.config/gtk-3.0 ~/.config/gtk-3.0
 
 # profile
-echo "\nexporting profile"
+printf "exporting profile"
 ln -svf $src/.profile ~/.profile
 
 # polybar
-echo "\nexporting polybar"
+printf "exporting polybar"
 rm -rf ~/.config/polybar
 ln -svf $src/.config/polybar ~/.config/polybar
 
@@ -32,10 +32,10 @@ ln -svf $src/.config/polybar ~/.config/polybar
 # oh-my-zsh
 
 # zshrc
-echo "\nexporting zsh"
+printf "exporting zsh"
 ln -svf $src/.zshrc ~/.zshrc
 
 # compton
-echo "\nexporting compton"
+printf "exporting compton"
 rm -rf ~/.config/compton
 ln -svf $src/.config/compton ~/.config/compton
