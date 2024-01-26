@@ -27,9 +27,9 @@ sudo dnf install \
         -y
 # additional repo required
 sudo dnf config-manager --set-enabled rpmfusion-nonfree-steam
-sudo dnf install steam
+sudo dnf install steam -y
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install vlc
+sudo dnf install vlc -y
 # enable media playback in firefox
 sudo dnf install ffmpeg-libs --allowerasing
 # font
