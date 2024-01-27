@@ -60,6 +60,8 @@ sudo dnf remove \
         mediawriter \
         rxvt-unicode \
         i3lock \
+        gnome-text-editor \
+        gnome-boxes \
         -y
 
 ###############
