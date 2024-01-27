@@ -39,3 +39,8 @@ ln -svf $src/.zshrc ~/.zshrc
 printf "exporting compton"
 rm -rf ~/.config/compton
 ln -svf $src/.config/compton ~/.config/compton
+
+# mangohud
+printf "exporting mangohud"
+rm -rf ~/.config/MangoHud
+ln -svf $src/.config/MangoHud ~/.config/MangoHud
