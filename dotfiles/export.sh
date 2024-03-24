@@ -44,3 +44,8 @@ ln -svf $src/.config/compton ~/.config/compton
 printf "exporting mangohud"
 rm -rf ~/.config/MangoHud
 ln -svf $src/.config/MangoHud ~/.config/MangoHud
+
+# xinit
+printf "exporting xinit"
+rm -rf ~/.xinitrc
+ln -svf $src/.config/.xinitrc ~/.xinitrc
