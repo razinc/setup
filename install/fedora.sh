@@ -14,7 +14,7 @@ sudo dnf install \
         alacritty \
         pavucontrol \
         gnome-tweaks \
-        neofetch \
+        fastfetch \
         xrandr \
         deluge \
         picom \
