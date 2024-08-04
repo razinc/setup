@@ -24,13 +24,12 @@ sudo dnf install \
         feh \
         zsh \
         meld \
+        vlc \
         -y
 # additional repo required
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 sudo dnf config-manager --enable fedora-cisco-openh264 -y
 sudo dnf install steam -y
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install vlc -y
 # enable media playback in firefox
 sudo dnf install ffmpeg-libs --allowerasing
 # font
