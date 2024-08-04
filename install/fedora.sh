@@ -30,8 +30,6 @@ sudo dnf install \
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 sudo dnf config-manager --enable fedora-cisco-openh264 -y
 sudo dnf install steam -y
-# enable media playback in firefox
-sudo dnf install ffmpeg-libs --allowerasing
 # font
 wget -P /tmp https://github.com/FortAwesome/Font-Awesome/releases/download/6.2.0/fontawesome-free-6.2.0-desktop.zip
 unzip -o /tmp/fontawesome-free-6.2.0-desktop.zip -d /tmp
