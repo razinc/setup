@@ -29,6 +29,10 @@ rm -rf ~/.config/polybar
 ln -svf $src/.config/polybar ~/.config/polybar
 
 # rofi
+printf "exporting rofi"
+rm -rf ~/.config/rofi
+ln -svf $src/.config/rofi ~/.config/rofi
+
 # oh-my-zsh
 
 # zshrc

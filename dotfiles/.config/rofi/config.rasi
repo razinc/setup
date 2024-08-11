@@ -1,0 +1,32 @@
+* {
+    pink :  #f872bd;
+    purple: #a972d1;
+    black:  #13130b;
+
+    selected-normal-foreground:     @black;
+    foreground:                     @pink; 
+    alternate-normal-background:    @black; 
+    background:                     @black;
+    selected-normal-background:     @pink; 
+    border-color:                   @black;
+    separatorcolor:                 @black;
+}
+
+entry {
+    placeholder: "";
+}
+
+textbox-num-sep {
+    text-color: @pink;
+}
+
+num-filtered-rows {
+    text-color: @pink;
+}
+num-rows {
+    text-color: @pink;
+}
+
+listview {
+    scrollbar: false;
+}
