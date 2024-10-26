@@ -218,5 +218,5 @@ exec --no-startup-id "steam -silent"
 # compton
 exec_always --no-startup-id compton --config ~/.config/compton/compton.conf
 
-bindsym $mod+Shift+s exec --no-startup-id "shutdown now"
-bindsym $mod+Shift+w exec --no-startup-id "systemctl suspend"
+bindsym $mod+Shift+o exec --no-startup-id "systemctl suspend"
+bindsym $mod+Shift+p exec --no-startup-id "shutdown now"
