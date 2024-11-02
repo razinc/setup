@@ -39,10 +39,10 @@ ln -svf $src/.config/rofi ~/.config/rofi
 printf "exporting zsh"
 ln -svf $src/.zshrc ~/.zshrc
 
-# compton
-printf "exporting compton"
-rm -rf ~/.config/compton
-ln -svf $src/.config/compton ~/.config/compton
+# picom
+printf "exporting picom"
+rm -rf ~/.config/picom
+ln -svf $src/.config/picom ~/.config/picom
 
 # mangohud
 printf "exporting mangohud"
