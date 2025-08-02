@@ -19,6 +19,8 @@ sudo dnf install \
         meld \
         vlc \
         kvantum \
+        memtest86+ \
+        cpu-x \
         -y
 # additional repo required
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
