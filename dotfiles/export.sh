@@ -9,11 +9,6 @@ printf "exporting vi"
 rm -rf ~/.config/nvim
 ln -svf $src/.config/nvim ~/.config/nvim
 
-# gtk
-printf "exporting gtk"
-rm -rf ~/.config/gtk-3.0
-ln -svf $src/.config/gtk-3.0 ~/.config/gtk-3.0
-
 # profile
 printf "exporting profile"
 ln -svf $src/.profile ~/.profile
