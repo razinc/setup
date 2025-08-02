@@ -106,5 +106,6 @@ alias fu="sudo dnf upgrade"
 alias fa="sudo dnf autoremove"
 
 # force QT apps to run in dark mode
-export QT_STYLE_OVERRIDE=Adwaita-dark
+export QT_STYLE_OVERRIDE=kvantum
+
 export EDITOR=/usr/bin/nvim
