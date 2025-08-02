@@ -1,0 +1,107 @@
+{
+    "margin-top": 5,
+    "margin-left": 5,
+    "margin-right": 5,
+    "height": 30,
+    "spacing": 5,
+
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    
+    "modules-right": [
+        "cpu",
+        "memory",
+        "temperature",
+        "pulseaudio",
+        "clock",
+        "tray"
+    ],
+
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "disable-scroll-wraparound": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十"
+        }
+    },
+
+    "sway/mode": {
+        "format": "{}"
+    },
+
+    "cpu": {
+        "states": {
+            "warning": 75,
+            "critical": 90
+        },
+        "format": "<span color = '#02e071'></span> {usage}%",
+        "format-warning": "<span color = '#ffff33'></span> {usage}%",
+        "format-critical": "<span color = '#bd2c40'></span> {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "states": {
+            "warning": 75,
+            "critical": 90
+        },
+        "format": "<span color = '#02e071'></span> {}%",
+        "format-warning": "<span color = '#ffff33'></span> {}%",
+        "format-critical": "<span color = '#bd2c40'></span> {}%",
+        "tooltip": false
+    },
+
+    "temperature": {
+        "thermal-zone": 1,
+        "states": {
+            "warning": 75,
+            "critical": 90
+        },
+        "format": "<span color = '#02e071'>{icon}</span> {temperatureC}°C",
+        "format-warning": "<span color = '#ffff33'>{icon}</span> {temperatureC}°C",
+        "format-critical": "<span color = '#bd2c40'>{icon}</span> {temperatureC}°C",
+        "format-icons": ["", "", ""],
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "<span color = '#f872bd'> {icon}</span> {volume}% {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "<span color = '#f872bd'></span> {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": "<span color = '#f872bd'> </span>{:%d %b %y<span color = '#f872bd'>  </span>%H%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "tray": {
+        "spacing": 10
+    }
+}

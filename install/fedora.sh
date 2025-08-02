@@ -12,20 +12,12 @@ sudo dnf install \
         htop \
         neovim python3-neovim \
         alacritty \
-        pavucontrol \
         gnome-tweaks \
         fastfetch \
-        xrandr \
         deluge \
-        picom \
-        i3 \
-        polybar \
-        rofi \
-        feh \
         zsh \
         meld \
         vlc \
-        flameshot \
         -y
 # additional repo required
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
@@ -58,10 +50,7 @@ sudo dnf remove \
         cheese \
         gnome-tour \
         yelp \
-        rxvt \
         mediawriter \
-        rxvt-unicode \
-        i3lock \
         gnome-text-editor \
         gnome-boxes \
         -y

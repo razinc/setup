@@ -1,0 +1,49 @@
+@define-color white #ffffff;
+@define-color black #14161b;
+@define-color pink #f872bd;
+
+* {
+    font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+window {
+    background-color: @black;
+}
+
+#inner-box {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+    background-color: @black;
+}
+
+#input {
+    padding: 0px 5px;
+    background: @black;
+    border: none;
+    color: @white;
+    border-radius: 0;
+}
+
+#text {
+    margin: 2px;
+    border: none;
+    color: @white;
+}
+
+#entry:selected {
+    background: @pink;
+    border: none;
+    outline: none;
+}
+
+#entry:selected #text {
+    color: @black;
+}
