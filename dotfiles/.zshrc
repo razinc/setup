@@ -105,7 +105,8 @@ source $ZSH/oh-my-zsh.sh
 alias fu="sudo dnf upgrade" 
 alias fa="sudo dnf autoremove"
 
-# force QT apps to run in dark mode
+# force apps to run in dark mode
 export QT_STYLE_OVERRIDE=kvantum
+export GTK_THEME=Adwaita:dark
 
 export EDITOR=/usr/bin/nvim
