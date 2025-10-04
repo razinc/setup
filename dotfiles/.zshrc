@@ -21,6 +21,7 @@ source $ZSH/oh-my-zsh.sh
 # alias
 alias fu="sudo dnf upgrade" 
 alias fa="sudo dnf autoremove"
+alias tt="du -hsx * | sort -rh | head -10"
 
 export EDITOR=/usr/bin/nvim
 
