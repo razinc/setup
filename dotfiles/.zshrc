@@ -18,6 +18,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
 # alias
 alias fu="sudo dnf upgrade" 
 alias fa="sudo dnf autoremove"
