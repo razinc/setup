@@ -32,8 +32,8 @@ unzip -o /tmp/fontawesome-free-6.2.0-desktop.zip -d /tmp
 sudo mkdir -p /usr/local/share/fonts
 sudo cp -r  /tmp/fontawesome-free-6.2.0-desktop/otfs /usr/local/share/fonts/FontAwesome6
 fc-cache -f -v
-# poetry
-curl -sSL https://install.python-poetry.org | python3 -
+# uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 # alternative text editor
 wget -P /tmp https://github.com/pulsar-edit/pulsar/releases/download/v1.118.0/Linux.pulsar-1.118.0.x86_64.rpm
 sudo dnf install /tmp/Linux.pulsar-1.118.0.x86_64.rpm -y
