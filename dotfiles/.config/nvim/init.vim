@@ -11,6 +11,8 @@ set tabpagemax=100
 set tabstop=4
 syn on
 
+source ~/.config/nvim/colorscheme.vim
+
 " TODO: group leader key mapping, nmap mapping & alias
 " leader key mapping
 let mapleader = " "
