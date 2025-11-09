@@ -33,3 +33,5 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
   pattern = ".virc",
   command = "set filetype=vim",
 })
+
+require("config.lazy")
