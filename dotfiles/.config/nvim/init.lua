@@ -9,6 +9,7 @@ vim.opt.showmatch = true
 vim.opt.tabpagemax = 100
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.termguicolors = true
 vim.cmd.syntax("on")
 vim.cmd.source("~/.config/nvim/colorscheme.vim")
 
