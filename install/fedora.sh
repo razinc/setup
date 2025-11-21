@@ -88,6 +88,11 @@ sudo dnf config-manager --set-enabled fedora-cisco-openh264
 sudo dnf group install multimedia -y
 sudo dnf group install sound-and-video -y
 
+# virtual manaager
+sudo dnf install @virtualization
+sudo systemctl start libvirtd
+sudo systemctl enable libvirtd
+
 #####################
 # remove bloatwares #
 #####################
