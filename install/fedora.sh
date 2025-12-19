@@ -56,8 +56,8 @@ fc-cache -f -v
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # alternative text editor
-wget -P /tmp https://github.com/pulsar-edit/pulsar/releases/download/v1.118.0/Linux.pulsar-1.118.0.x86_64.rpm
-sudo dnf install /tmp/Linux.pulsar-1.118.0.x86_64.rpm -y
+wget "https://download.pulsar-edit.dev/?os=linux&type=linux_rpm" -O /tmp/pulsar.rpm
+sudo dnf install /tmp/pulsar.rpm -y
 
 # graphic
 sudo dnf install \
