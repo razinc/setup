@@ -89,7 +89,7 @@ sudo dnf group install multimedia -y
 sudo dnf group install sound-and-video -y
 
 # virtual manaager
-sudo dnf install @virtualization
+sudo dnf install @virtualization -y
 sudo systemctl start libvirtd
 sudo systemctl enable libvirtd
 
