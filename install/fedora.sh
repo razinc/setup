@@ -37,6 +37,7 @@ sudo dnf install \
     cpu-x \
     steam \
     curl \
+    openrgb \
     -y
 
 # font
