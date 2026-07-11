@@ -38,6 +38,7 @@ sudo dnf install \
     steam \
     curl \
     openrgb \
+    mangohud \
     -y
 
 # font
