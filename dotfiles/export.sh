@@ -23,3 +23,9 @@ ln -svf $src/.zshrc ~/.zshrc
 printf "exporting mangohud"
 rm -rf ~/.config/MangoHud
 ln -svf $src/.config/MangoHud ~/.config/MangoHud
+
+# openrgb
+printf "exporting openrgb"
+mkdir -p ~/.config/OpenRGB
+ln -svf $src/.config/OpenRGB/eva.orp ~/.config/OpenRGB
+ln -svf $src/.config/OpenRGB/off.orp ~/.config/OpenRGB

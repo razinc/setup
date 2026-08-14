@@ -79,4 +79,5 @@ client.unfocused        #000000 #000000 #000000
 
 # startup
 exec "steam -silent"
+exec "openrgb --profile ~/.config/OpenRGB/eva.orp"
 
